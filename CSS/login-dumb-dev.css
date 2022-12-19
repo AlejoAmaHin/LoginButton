@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e3e3;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: rgba(8,19,26,255);
+    box-shadow: 16px 16px 32px #111d29, -16px -16px 32px #111d29;
+
+}
+
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: 0.1s;
+}
+
+.inputBox span {
+    margin-top:  5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: rgba(6,230,238,255);
+    border:  2px;
+    border-radius: 10px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 2px solid #fff;
+}
+
+button {
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid rgba(6,230,238,255);
+    color: rgba(6,230,238,255);
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: rgba(6,230,238,255);
+    color: #fff;
+    box-shadow: 10px 10px 32px #0094a3, -10px -10px 32px #0094a3;
+}
+
+.container {
+    background: linear-gradient(
+        rgba(19,30,49,255), rgba(30,56,81,255)
+    ), url(../images/desktop-popup.jpg);
+}
