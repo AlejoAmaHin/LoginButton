@@ -105,6 +105,5 @@ button:hover {
 
 .container {
     background: linear-gradient(
-        rgba(19,30,49,255), rgba(30,56,81,255)
-    ), url(../images/desktop-popup.jpg);
+        rgba(19,30,49,255), rgba(30,56,81,255));
 }
